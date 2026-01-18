@@ -44,15 +44,9 @@ nav{
     border-bottom:  1px solid rgba(65, 37, 103, 1);
 }
 
-.navbar{
-    justify-content: space-between;
-    align-items: center;
-}
-
 .navbar button,
 .banner .spotify-btn{
-        background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
-    
+        background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));    
 }
 
 button{
@@ -64,11 +58,12 @@ button{
 
 }
 
-.navbar img{
+.navbar .hamburger{
     display: none;
 }
 
 .banner{
+    width: 100%;
     background-image: url('./images/hero-bg.png');
     background-size: cover; 
     background-repeat: no-repeat;
@@ -78,6 +73,39 @@ button{
 .banner .subscribe{
     color:#00FF88;
 }
+/* Header style End */
+
+
+.about-content{
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   
+}
+
+
+.about-info{
+    padding-top:80px ;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -90,8 +118,22 @@ button{
     .navbar .hamburger{
         display: block;
     }
+    
     .nav-menu,
     .navbar button{
         display: none;
     }
+
+    .banner-circle{
+        max-width: 250px;
+    }
+
+    .mic-bounce{
+        max-width: 80px;
+    }
+
+    /* Header style */
+    .about-info{
+    grid-template-columns: repeat(2,1fr);
+}
 }
