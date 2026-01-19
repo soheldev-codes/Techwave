@@ -98,6 +98,7 @@ button {
 }
 
 .social-link i {
+  cursor: pointer;
   width: 40px;
   height: 40px;
   border: 1px solid rgba(83, 60, 114, 1);
@@ -114,6 +115,20 @@ button {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+
+.social-link i:hover {
+  filter: brightness(1.2);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* Footer style */
+.footer-icons {
+  text-align: center;
+  grid-template-columns: repeat(4, 160px);
+  align-items: center;
+  justify-content: center;
 }
 
 /* Mobile responsive */
@@ -146,10 +161,29 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .featured-title,
+  .about-title,
+  .host-title {
+    font-size: 2rem;
+  }
+
   /* meet host */
 
   .host-box {
     flex-direction: column;
     text-align: center;
+  }
+
+  .host-name {
+    font-size: 1.5rem;
+  }
+
+  /* footer */
+  .footer-icons {
+    row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-title {
+    font-size: 3rem;
   }
 }
