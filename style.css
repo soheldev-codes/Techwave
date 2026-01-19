@@ -83,6 +83,13 @@ button {
   gap: 20px;
 }
 
+/* why choose section */
+
+.why-choose {
+  padding: 120px 0px;
+  background: rgba(35, 14, 61, 1);
+}
+
 /* Fetured Episodes */
 
 #Featured-card-box {
@@ -156,6 +163,11 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /*  */
+
+  .card-one {
+  }
+
   /* featured episodes */
   #Featured-card-box {
     grid-template-columns: 1fr;
@@ -163,7 +175,8 @@ button {
 
   .featured-title,
   .about-title,
-  .host-title {
+  .host-title,
+  .why-choose-title {
     font-size: 2rem;
   }
 
